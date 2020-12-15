@@ -1,2 +1,5 @@
- # Hello 
-# Update from AWS EC2 user instance
+FROM alpine
+
+RUN apk add --update redis
+
+CMD ["redis-server"]
