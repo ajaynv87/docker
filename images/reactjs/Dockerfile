@@ -1,6 +1,6 @@
 FROM ubuntu
 
-WORKDIR /temp_folder
+WORKDIR /hello_react
 
 RUN apt-get update
 
@@ -20,6 +20,12 @@ RUN npm install -g create-react-app
 
 RUN create-react-app hello-react
 
-RUN mv -v hello-react/ ../
+# hello-react folder is at /hello-react/hello-react
+
+RUN mv -v hello_react/* .
+
+RUN rm -rf hello_react
+
+
 
 CMD ["npm", "start"]
