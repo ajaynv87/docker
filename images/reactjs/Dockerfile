@@ -1,6 +1,6 @@
 FROM ubuntu
 
-WORKDIR /hello_react
+WORKDIR /hello-react
 
 RUN apt-get update
 
@@ -22,9 +22,9 @@ RUN create-react-app hello-react
 
 # hello-react folder is at /hello-react/hello-react
 
-RUN mv -v hello_react/* .
+RUN mv -v hello-react/* .
 
-RUN rm -rf hello_react
+RUN rm -rf hello-react
 
 
 
