@@ -26,6 +26,4 @@ RUN mv -v hello-react/* .
 
 RUN rm -rf hello-react
 
-
-
 CMD ["npm", "start"]
